@@ -1,0 +1,10 @@
+This is an adventure game where you travel from room to room until you make it out and into the different areas. You can pick up items, make choices
+and even improve stats to a degree. The point of the game is to adventure through the quest line. This is meant to demonstrate my skills in python, and to show creativity.
+
+
+improvements to be made:
+-when you pick up an item, it still shows the item available to pick up
+-some items are listed that are not able to be picked up 
+-need to develop a storyline to play through
+-later would like to add in some graphics
+-need an option to exit the game.
