@@ -1,2 +1,2 @@
 # WordRPG
-A python word rpg.
+Welcome to my first attempt at a python word rpg. This is a game made in just words, there are no graphics here. Think old school DnD pc games or similar. I have only one class playable, a wizard, and it isn't a complete game yet. I am working on the storyline, enemies to fight, and many more features. As it stands, you can launch this, enter rooms, pick up items, experience health loss due to item interactions, and that's about it right now. I hope you enjoy this little game, and that it encourages you to try to develop a game in the near future. Feel free to use this code to get you started and then just customize the story and characters. Good luck and have fun!
