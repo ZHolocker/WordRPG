@@ -14,7 +14,7 @@ def main():
     first_room = Room(
         name="The Beginning",
         description="""This is the room where your adventure begins. There is a faint light coming from the north.""",
-        exits={"north": second_room},
+        exits={"north": 'second_room'},
         items=["Old book", "Rusty key", "candle", "sword"],
         enemies=[]
     )
@@ -22,7 +22,6 @@ def main():
     second_room = Room(
         name="The second room",
         description="You enter a dark hallway. The air smells musty and old.",
-        exits={"south": first_room, "east": third_room},
         items=["Torch", "Broken mirror"],
         enemies=[]
     )
@@ -30,7 +29,6 @@ def main():
     third_room = Room(
         name="The final room",
         description="You have reached the end of the hallway. It is dark and empty.",
-        exits={"west": second_room, "north": outside_area1},
         items=["Gold"],
         enemies=[]
     )
@@ -38,13 +36,28 @@ def main():
     outside_area1 = Room(
         name="Outside area 1",
         description="You have reached the end of the hallway. It is dark and empty.",
-        exits={"south": third_room, "west": second_room},
         items=["Torch"],
         enemies=[]
     )
+    #update the exits
+    second_room.exits={"south": first_room, "east": third_room}
+    
+    third_room.exits={"west": second_room, "north": outside_area1}
+    
+    outside_area1.exits={"south": third_room, "west": second_room}
+    
     
     # Link rooms
     first_room.exits["north"] = second_room
+    
+    second_room.exits["south"] = first_room
+    second_room.exits["east"] = third_room
+    
+    third_room.exits["west"] = second_room
+    third_room.exits["north"] = outside_area1
+    
+    outside_area1.exits["south"] = third_room
+    outside_area1.exits["west"] = second_room
     
     current_room = first_room
     
