@@ -1,7 +1,6 @@
-from characters import *
-from rooms import *
-from characters import *
-from rooms import *
+from character import *
+from room import *
+
 
 # this is where I keep the storylines of the game as it all unfolds I will call each storyline as the story unfolds.
 def player_greeting(player):
